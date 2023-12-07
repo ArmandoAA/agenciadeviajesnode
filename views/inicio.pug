@@ -1,0 +1,30 @@
+extends ./layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat mauris eud sapien fermentuma porta justo varius. Nullam aliquam lectus id erat vestibulum, id iaculis tortor tempus. Sed dictum,auctor augue in tristique. In eu maximus diam, quis pretium ligula. Vestibulum magna lorem, aliquam non dui sed,luctus maximus ligula. Cras consectetur lectus a aliquet maximus. Donec nibh sapien, elementum nec orci quiscommodo fermentum tortor.Proin lacinia vestibulum tristique. Vestibulum pellendsatesque nisl a sollicitudin luctus.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat mauris eu sapien fermentum
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+            
+            //p= JSON.stringify(viajes)
+        include ./layout/bloque_viaje
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h1 %5 de Descuento
+                        p.titulo Viaje a Peru
+                        p.fecha 20 de marzo 2023 - 30 de abril 2023
+                        p.precio S/. 2000 Soles
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
